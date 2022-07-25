@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MiSitio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Login - MiSitio</h1>
+    </header>
+    <main>
+        <div class="formulario">
+            <label>Usuario:
+                <input type="text" id="user" name="user" required>
+            </label>
+            <label> PassWord:
+                <input type="password" id="pass" name="pass" required>
+            </label>
+            <button onclick="validar()" id="boton">
+                <img src="./img/btlogin.jpg" alt="Hacer Login">
+            </button>
+                      
+        </div>
+        <div id="salida"><a href="registro.html">Registrarse</a></div>
+    </main>
+    <footer>
+        <p>Realizado por JCNSYSTEM &copy; 2022</p>
+    </footer>
+    <script src="./js/comunicacion.js">
+    </script>
+</body>
+</html>

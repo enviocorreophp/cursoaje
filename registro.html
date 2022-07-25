@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - MiSitio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Registro - MiSitio</h1>
+    </header>
+    <main>
+        <div class="formulario">
+            <label><span class="obligatorio">*</span> Usuario:
+                <input type="text" id="user" name="user" required minlength="8" pattern="[a-z]{8,}">
+            </label>
+            <label><span class="obligatorio">*</span> Correo :
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </label>
+            <label><span class="obligatorio">*</span> PassWord:
+                <input type="password" id="pass" name="pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            </label>
+            <button onclick="validar()" id="boton">
+                <img src="./img/btregistro.jpg" alt="Registrar">
+            </button>
+                      
+        </div>
+        <div id="salida"></div>
+    </main>
+    <footer>
+        <p>Realizado por JCNSYSTEM &copy; 2022</p>
+    </footer>
+    <script src="./js/comunicacionr.js"></script>
+</body>
+</html>
